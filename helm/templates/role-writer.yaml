@@ -10,27 +10,49 @@ rules:
   - sagemaker.services.k8s.aws
   resources:
   - apps
+
   - dataqualityjobdefinitions
+
   - domains
+
   - endpoints
+
   - endpointconfigs
+
   - featuregroups
+
   - hyperparametertuningjobs
+
   - models
+
   - modelbiasjobdefinitions
+
   - modelexplainabilityjobdefinitions
+
   - modelpackages
+
   - modelpackagegroups
+
   - modelqualityjobdefinitions
+
   - monitoringschedules
+
   - notebookinstances
+
   - notebookinstancelifecycleconfigs
+
   - pipelines
+
   - pipelineexecutions
+
   - processingjobs
+
   - trainingjobs
+
   - transformjobs
+
   - userprofiles
+
   verbs:
   - create
   - delete
