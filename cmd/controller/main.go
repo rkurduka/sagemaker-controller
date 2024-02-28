@@ -156,10 +156,17 @@ func main() {
 	sc := ackrt.NewServiceController(
 		awsServiceAlias, awsServiceAPIGroup, awsServiceEndpointsID,
 		acktypes.VersionInfo{
-			version.GitCommit,
-			version.GitVersion,
-			version.BuildDate,
+			GitCommit: version.GitCommit,
+			BuildDate: version.BuildDate,
+			GitVersion: version.GitVersion,
+
 		},
+
+		// acktypes.VersionInfo{
+		// 	version.GitCommit,
+		// 	version.GitVersion,
+		// 	version.BuildDate,
+		// },
 	).WithLogger(
 		ctrlrt.Log,
 	).WithResourceManagerFactories(
