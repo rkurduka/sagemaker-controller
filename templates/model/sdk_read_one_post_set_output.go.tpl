@@ -1,4 +1,5 @@
 var resp_tags *svcsdk.ListTagsOutput
+
 resp_tags, err = rm.sdkapi.ListTagsWithContext(ctx,&svcsdk.ListTagsInput{ResourceArn: resp.ModelArn})
 rm.metrics.RecordAPICall("READ_ONE", "DescribeTags", err)
 
